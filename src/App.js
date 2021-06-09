@@ -1244,13 +1244,6 @@ console.log(iteratorFunc.next()); // {value: 4, done: true}
             </div>
           </div>
         </li>
-        <li>
-          <p>17、讲讲js的线程和进程</p>
-          <div className="code-div">
-            <button>答案</button>
-            <div className="hide23"></div>
-          </div>
-        </li>
       </ul>
     </div>
   );
