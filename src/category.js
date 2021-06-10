@@ -4,6 +4,7 @@ import Webpack2 from "./webpack2";
 import App from "./App"; // js 汇总1
 import App1 from "./App1"; // js 汇总1
 import ReactApp from "./React";
+import ReactApp2 from "./React2";
 import VueApp from "./Vue";
 import Math from "./math";
 import Browser from "./browser";
@@ -34,6 +35,9 @@ export default function () {
           </li>
           <li>
             <Link to="/react1">React1</Link>
+          </li>
+          <li>
+            <Link to="/react2">React2</Link>
           </li>
           <li>
             <Link to="/vue">Vue</Link>
@@ -85,6 +89,9 @@ export default function () {
           </Route>
           <Route path="/react1">
             <ReactApp />
+          </Route>
+          <Route path="/react2">
+            <ReactApp2 />
           </Route>
           <Route path="/vue">
             <VueApp />

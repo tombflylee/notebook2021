@@ -546,6 +546,9 @@ console.log(div.offsetTop);
               </SyntaxHighlighter>
             </div>
           </div>
+          <div className="tips tips-green">
+            js线程 / event loop调度等 看《js2》
+          </div>
         </li>
       </ul>
     </div>

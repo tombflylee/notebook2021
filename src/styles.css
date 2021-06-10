@@ -15,7 +15,21 @@ li {
   list-style-type: none;
   margin-bottom: 3px;
 }
-
+.tips {
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 4px 10px;
+  display: inline-block;
+}
+.tips-green {
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+.tips-red {
+  background: #fff2f0;
+  border-color: #ffccc7;
+}
 .margin1 {
   margin-top: 5px;
 }

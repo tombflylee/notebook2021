@@ -215,7 +215,7 @@ class App {
               <p>
                 要看setState是如何调用的，是否受react控制，可以区分为以下集中情况：
               </p>
-              <img src="assets/react1.png" width="350px" />
+              <img src="./assets/react1.png" width="350px" />
               <p>
                 原因：（一句话搞定）react中有一个batchUpdate批量更新机制，通过事务（transaction）机制实现；当使用前两种情况调用setState，当前事件被包裹在一个transaction中，并且在initialize中已经设置isBatchingUpdates为true，所以在setState时候，会把入参state和入参callback放入一个queue中，在transaction的close中统一进行合并；
               </p>
