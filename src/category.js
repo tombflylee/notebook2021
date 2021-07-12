@@ -1,4 +1,6 @@
 import React from "react";
+import { Menu, Dropdown } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 import WebPack from "./webpack1";
 import Webpack2 from "./webpack2";
 import App from "./App"; // js 汇总1
@@ -16,10 +18,13 @@ import MyWork from "./mywork";
 import Performance from "./performance";
 import CSS from "./css";
 import REdux from "./redux";
+import Code from "./Code";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./styles.css";
 
 export default function () {
+  const [visible, setVisible] = React.useState(false);
+
   return (
     <Router>
       <div>
@@ -78,6 +83,9 @@ export default function () {
           <li>
             <Link to="/redux">redux相关</Link>
           </li>
+          <li>
+            <Link to="/code">算法+编程</Link>
+          </li>
         </ul>
 
         <Switch>
@@ -131,6 +139,9 @@ export default function () {
           </Route>
           <Route path="/redux">
             <REdux />
+          </Route>
+          <Route path="/code">
+            <Code />
           </Route>
           <Route path="/">{/* <Home /> */}</Route>
         </Switch>

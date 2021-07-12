@@ -95,4 +95,11 @@ li {
   border: 1px solid orange;
   height: 50px;
   overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-ul li {
+  flex-shrink: 0;
+  margin-left: 0;
+  margin-right: 10px;
 }
