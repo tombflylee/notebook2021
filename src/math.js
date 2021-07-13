@@ -5,8 +5,26 @@ import "./styles.css";
 export default function App() {
   return (
     <div>
-      <h4>math(1)</h4>
+      <h4>math(1) day by day</h4>
       <ul>
+        <li>数组拍平</li>
+        <div className="indent1" style={{ border: "1px solid #b37feb" }}>
+          <p>
+            1）新的api，
+            <code className="tt-code-style">Array.prototype.flat(depth)</code>
+            可以完成；参数depth，可以控制拍平的层数；
+            <br />
+            2.1）递归 之 push；
+            <code className="tt-code-style">
+              flatten(inputArray, resultArray);
+            </code>
+            <br />
+            2.2）递归 之 concat；
+            <code className="tt-code-style">flatten(inputArray);</code>
+            <br />
+            3）技巧：join+split实现
+          </p>
+        </div>
         <li>1、排序</li>
         <li className="indent1">
           1.1、冒泡排序

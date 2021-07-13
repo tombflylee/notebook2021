@@ -103,3 +103,20 @@ li {
   margin-left: 0;
   margin-right: 10px;
 }
+.tt-code-style {
+  background: #eee;
+  padding: 3px;
+  border-radius: 2px;
+}
+.qtitle {
+  font-weight: bold;
+}
+.time {
+  margin-left: 8px;
+  color: #08bb53;
+  font-weight: bold;
+  background: #8c8c8c;
+  padding: 2px 6px;
+  display: inline-block;
+  border-radius: 3px;
+}

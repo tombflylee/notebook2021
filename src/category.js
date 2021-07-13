@@ -84,7 +84,7 @@ export default function () {
             <Link to="/redux">redux相关</Link>
           </li>
           <li>
-            <Link to="/code">算法+编程</Link>
+            <Link to="/code">手写</Link>
           </li>
         </ul>
 
