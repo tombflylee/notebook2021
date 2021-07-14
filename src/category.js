@@ -19,6 +19,7 @@ import Performance from "./performance";
 import CSS from "./css";
 import REdux from "./redux";
 import Code from "./Code";
+import Journey from "./Journey";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./styles.css";
 
@@ -86,6 +87,9 @@ export default function () {
           <li>
             <Link to="/code">手写</Link>
           </li>
+          <li>
+            <Link to="/journey">journey</Link>
+          </li>
         </ul>
 
         <Switch>
@@ -142,6 +146,9 @@ export default function () {
           </Route>
           <Route path="/code">
             <Code />
+          </Route>
+          <Route path="/journey">
+            <Journey />
           </Route>
           <Route path="/">{/* <Home /> */}</Route>
         </Switch>
